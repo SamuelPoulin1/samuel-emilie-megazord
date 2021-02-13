@@ -1,56 +1,84 @@
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata:wght@300&display=swap);
+@import url(
+https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap);
+
+:root {
+--primary:#4b8996; 
+--primary-alt:rgb(57, 73, 90);
+--secondary:#87d0dc;
+--secondary-alt:#a9dcdf;
+--bg: #555a5f;
+--text: #E4EFFF;
+  
+--title: 'Fredericka the Great'; 
+--regular: 'Inconsolata';
+}
+
 body {
-  background-color: aqua;
-}
+    background-color: var(--primary-alt);
+  }
 
-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
- 
-picture {
-  background-color: black;
-}
-
-.col-12 {
-  position: absolute;
-  bottom: 0;
-  left: 60px;
-  z-index: 3;
-}
-
-.container {
-  font-size: 25px;
-  font-size: 3vw;
-}
-
-.contraste {
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+   
+  picture {
+    background-color: black;
+  }
+  
+  .col-12 {
     position: absolute;
-    background: linear-gradient(to bottom, transparent, rgba(6, 0, 179, 0.5));
+    color:  var(--text);
+    font-family: var(--title);
+    font-size: 4.5vw;
+    opacity: 100%;
     bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
+    left: 60px;
+    z-index: 3;
+  }
 
-button {
-    position: absolute;
-    background-color: #00dce4;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 2.5vw;
-    border-radius: 10px 10px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    z-index: 2;
-}
+  .container {
+    font-size: 25px;
+    font-size: 3vw;
+  }
 
-button:hover {
-    background-color: #3E587B;
-    color: white;
-}
+  .info {
+    color:  var(--text);
+    font-family: var(--regular);
+    font-size: 25px;
+    font-size: 3vw;
+  }
+
+  .contraste {
+      position: absolute;
+      background: linear-gradient(to bottom, transparent, rgba(6, 0, 179, 0.5));
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 0;
+      z-index: 1;
+  }
+  
+  button {
+      position: absolute;
+      background-color: #3E587B;
+      border: none;
+      color:  var(--text);
+      font-family: var(--regular);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 2.5vw;
+      border-radius: 10px 10px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      z-index: 2;
+  }
+  
+  button:hover {
+      background-color: darkblue;
+      color: white;
+  }
