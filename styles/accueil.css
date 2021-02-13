@@ -1,0 +1,54 @@
+header {
+    height: 99vh;
+    width: 100%; 
+    background-color: var(--primary-alt);
+    position: absolute; 
+}
+    
+    
+.hero{
+opacity: 78%;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.title{
+position: absolute; 
+top: 50%;
+left: 12%;
+z-index: 5;
+width: 80%;
+max-width: 800px;
+text-align: center;
+}
+
+.rectangle {
+background: rgba(34, 45, 69, 0.4);
+padding: 20px; 
+}
+
+
+.titre{
+color:  var(--text); 
+font-family: var(--title);
+font-size: 11.5vw;
+opacity: 100%; 
+z-index: 6; 
+}
+
+.description{
+color:  var(--text); 
+font-family: var(--regular);
+font-size: 25px;
+font-size: 3vw;
+}
+
+.bouton{ 
+font-family: var(--regular);
+background-color: #3E587B;
+border-radius: 10px 10px;
+border:0px; 
+font-size: 2.5vw;
+color:  var(--text); 
+}
