@@ -1,38 +1,37 @@
 header {
-    height: 99vh;
-    width: 100%; 
-    background-color: var(--primary-alt);
-    position: absolute; 
+height: 100vh;
+width: 100%; 
+background-color: var(--primary-alt);
+position: absolute; 
 }
-    
-    
+
+
+
 .hero{
-opacity: 78%;
+opacity: 75%;
 width: 100%;
 height: 100%;
 object-fit: cover;
+object-position: 50% 45%;
 }
 
 .title{
-position: absolute; 
-top: 50%;
-left: 12%;
+position: absolute;
+top: 35%;
 z-index: 5;
-width: 80%;
-max-width: 800px;
 text-align: center;
 }
 
 .rectangle {
 background: rgba(34, 45, 69, 0.4);
-padding: 20px; 
+padding: 10px; 
 }
 
 
 .titre{
 color:  var(--text); 
 font-family: var(--title);
-font-size: 11.5vw;
+font-size: 10.5vw;
 opacity: 100%; 
 z-index: 6; 
 }
@@ -51,4 +50,45 @@ border-radius: 10px 10px;
 border:0px; 
 font-size: 2.5vw;
 color:  var(--text); 
+}
+
+@media screen and (min-width: 900px) {
+.titre{
+font-size: 100px;
+}
+.description{
+font-size: 25px;
+}
+.bouton{
+font-size: 25px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.titre{
+font-size: 65px;
+}
+.description{
+font-size: 20px;
+}
+.bouton{
+font-size: 20px;
+}
+}
+
+@media (orientation: landscape) {
+header{
+height: 56.7vh;
+width: 100%; 
+}
+}
+
+@media (orientation: portrait) {
+.title{
+position: absolute;
+top: 45%;
+}
+
+
+
 }
