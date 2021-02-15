@@ -1,1 +1,30 @@
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+img {
+    margin-top: 20px;
+}
+
+button {
+    position: absolute;
+    background-color: #3E587B;
+    border: none;
+    color:  var(--text);
+    font-family: var(--regular);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.5vw;
+    border-radius: 10px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+button:hover {
+    background-color: darkblue;
+    color: white;
+}
