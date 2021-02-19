@@ -1,17 +1,14 @@
-<<<<<<< Updated upstream
-=======
 :root {
     --primary:#4b8996; 
     --primary-alt:#3E587B;
     --secondary:#87d0dc;
     --secondary-alt:#a9dcdf;
-    --bg: #12141c;;
+    --bg: #12141c;
     --text: #E4EFFF;
       
     --title: 'Fredericka the Great'; 
     --regular: 'Neucha', cursive;
 }
->>>>>>> Stashed changes
 
 h3{
 font-family: var(--title);
@@ -25,5 +22,5 @@ color: var(--secondary-alt);
 font-size:20px; 
 }
 
-@import url('styles/accueil.css')
-@import url('styles/discographie.css') 
+@import url('styles/accueil.css');
+@import url('styles/discographie.css');
