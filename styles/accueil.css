@@ -1,1 +1,172 @@
+<<<<<<< Updated upstream
 
+=======
+/* ------------ hero ------------ */
+
+.fond{
+position: absolute;
+height: 200vh; 
+width: 100%; 
+background-color: var(--bg); 
+z-index: -3; 
+}
+
+header {
+height: 100vh;
+width: 100%; 
+background-color: var(--primary-alt);
+position: absolute; 
+}
+
+
+
+.hero{
+opacity: 75%;
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: 50% 45%;
+}
+
+.title{
+position: absolute;
+top: 35%;
+z-index: 5;
+text-align: center;
+}
+
+.rectangle {
+background: rgba(34, 45, 79, 0.4);
+padding-bottom: 10px;
+}
+
+
+.titre{
+color:  var(--text); 
+font-family: var(--title);
+font-size: 10.5vw;
+opacity: 100%; 
+z-index: 6; 
+}
+
+.description{
+color:  var(--text); 
+font-family: var(--regular);
+font-size: 25px;
+font-size: 3vw;
+}
+
+.bouton{ 
+font-family: var(--regular);
+background-color: var(--primary-alt);
+border-radius: 10px 10px;
+border:0px; 
+font-size: 2.5vw;
+color:  var(--text); 
+}
+
+@media screen and (min-width: 900px) {
+.titre{
+font-size: 100px;
+}
+.description{
+font-size: 25px;
+}
+.bouton{
+font-size: 25px;
+}
+}
+
+
+
+@media (orientation: landscape) {
+header{
+height: 56.7vh;
+width: 100%; 
+}
+}
+
+@media (orientation: portrait) {
+.title{
+position: absolute;
+  top: 45%;} 
+
+.titre{
+font-size: 65px;
+}
+.description{
+font-size: 20px;
+}
+.bouton{
+font-size: 20px;
+}
+}
+
+
+/* ---------- nav -------------- */
+
+nav{
+position: absolute; 
+top: 100%;
+}
+
+.navcolo{
+background-color: var(--primary-alt);
+color: var(--text); 
+}
+
+.logo{
+font-family: var(--title);
+font-size: 30px;
+padding-top: 2px; 
+}
+
+.sizenav{
+font-size: 26px;
+}
+
+.sablier{
+height: 40px;
+position:absolute;
+top: 10px;
+left: 174px;  
+}
+
+ul{
+font-family: var(--regular);
+font-size: 18px;
+}
+
+@media (min-width: 576px){
+ul{
+position: absolute;
+left: 220px;
+padding-bottom: 4px;
+}
+}
+
+@media (orientation: landscape) {
+nav{
+position: absolute; 
+top: 56.55vh;
+}
+}
+
+@media (orientation: portrait) {
+nav{
+position: absolute; 
+top: 99vh;
+z-index: 9; 
+}
+}
+
+
+.current{
+filter: drop-shadow(1px 1px 5px var(--secondary-alt));
+}
+/* changer la classe current selon la page */
+
+/* ------------------------ */
+
+}
+>>>>>>> Stashed changes
