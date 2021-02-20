@@ -1,19 +1,14 @@
 
-.fond{
-position: absolute;
-height: 200vh; 
-width: 100%; 
+body{
 background-color: var(--bg); 
-z-index: -3; 
 }
 
 header {
 height: 100vh;
 width: 100%; 
 background-color: var(--primary-alt);
-position: absolute; 
+position: relative; 
 }
-
 
 
 .hero{
@@ -26,7 +21,7 @@ object-position: 50% 45%;
 
 .title{
 position: absolute;
-top: 35%;
+top: 45%;
 z-index: 5;
 text-align: center;
 }
@@ -48,7 +43,7 @@ z-index: 6;
 .description{
 color:  var(--text); 
 font-family: var(--regular);
-font-size: 25px;
+font-size: 18px;
 font-size: 3vw;
 }
 
@@ -77,34 +72,31 @@ font-size: 25px;
 
 @media (orientation: landscape) {
 header{
-height: 56.7vh;
+height: 56.7vw;
 width: 100%; 
 }
 }
 
 @media (orientation: portrait) {
-.title{
-position: absolute;
+  .title{
+  position: absolute;
   top: 45%;} 
 
-.titre{
-font-size: 65px;
-}
-.description{
-font-size: 20px;
-}
-.bouton{
-font-size: 20px;
-}
+  .titre{
+  font-size: 65px;
+  }
+  .description{
+  font-size: 20px;
+  }
+  .bouton{
+  font-size: 20px;
+  }
 }
 
 
-/* ---------- nav -------------- */
+/* ----------- nav ------------- */
 
-nav{
-position: absolute; 
-top: 100%;
-}
+
 
 .navcolo{
 background-color: var(--primary-alt);
@@ -141,20 +133,7 @@ padding-bottom: 4px;
 }
 }
 
-@media (orientation: landscape) {
-nav{
-position: absolute; 
-top: 56.55vh;
-}
-}
 
-@media (orientation: portrait) {
-nav{
-position: absolute; 
-top: 99vh;
-z-index: 9; 
-}
-}
 
 
 .current{
@@ -162,6 +141,44 @@ filter: drop-shadow(1px 1px 5px var(--secondary-alt));
 }
 /* changer la classe current selon la page */
 
-/* ------------------------ */
+
+/* --------- cartes --------------- */
+
+main{
+padding: 20px;
+}
 
 
+.turquoise{
+background-color: var(--primary)
+}
+
+h3{
+font-family: var(--title);
+color: var(--text);
+font-size:35px; 
+}
+
+h4{
+font-family: var(--regular);
+color: var(--secondary-alt);
+font-size:20px; 
+}
+
+.card {
+margin-bottom: 10px;
+margin-top: 10px;
+background-color: #0a0b0d;
+text-align: center;
+}
+
+
+p{
+color: var(--primary);
+font-family: var(--regular);  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+  
