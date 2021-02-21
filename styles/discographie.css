@@ -202,6 +202,7 @@ img {
   .duality {
     width: 100%;
     top: 2700px;
+    height: auto;
   }
   .titre3 {
     left: 10px;
