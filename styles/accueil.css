@@ -181,4 +181,17 @@ font-family: var(--regular);
 html {
   scroll-behavior: smooth;
 }
+
+a:hover{
+color: var(--bg);
+}
+
+.bouton:hover{ 
+color: var(--bg);
+}
+
+button:hover{
+background-color: var(--secondary);
+color: var(--bg);
+}
   
