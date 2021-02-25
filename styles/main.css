@@ -28,10 +28,6 @@ color: var(--text);
 text-decoration: none; 
 }
 
-a:hover{
-color: var(--secondary-alt);
-text-decoration: none; 
-}
 
 @import url('styles/accueil.css');
 @import url('styles/discographie.css');
