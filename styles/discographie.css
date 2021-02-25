@@ -27,11 +27,11 @@ a:link {
 }
 
 a:visited {
-  color: white;
+  color: var(--text);
 }
 
 a:focus {
-  color: lightblue;
+  color: var(--bg);
 }
 
 section {
