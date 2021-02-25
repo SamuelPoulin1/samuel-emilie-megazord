@@ -3,14 +3,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Neucha&display=swap);
 
 :root {
-  --primary: #4b8996;
-  --primary-alt: rgb(57, 73, 90);
-  --secondary: #87d0dc;
-  --secondary-alt: #a9dcdf;
-  --text: #e4efff;
-  --bg: #12141c;
-  --title: "Fredericka the Great";
-  --regular: "Neucha", cursive;
+    --primary:#4b8996; 
+    --primary-alt:#3E587B;
+    --secondary:#87d0dc;
+    --secondary-alt:#a9dcdf;
+    --bg: #12141c;
+    --text: #E4EFFF;
+
+    --title: 'Fredericka the Great'; 
+    --regular: 'Neucha', cursive;
 }
 
 body{
