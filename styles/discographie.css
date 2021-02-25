@@ -50,8 +50,8 @@ img {
 
 .bouton1 {
   position: absolute;
-  background-color: transparent;
   border: none;
+  background-color: var(--primary);
   color: var(--text);
   font-family: var(--regular);
   padding: 15px 32px;
@@ -67,7 +67,8 @@ img {
 .bouton1:hover,
 .bouton2:hover,
 .bouton3:hover {
-  background-color: darkblue;
+  background-color:  var(--secondary);
+  color: var(--bg);
 }
 
 .titre1 {
@@ -80,7 +81,7 @@ img {
 .liste1 {
   font-family: var(--regular);
   font-size: 25px;
-  color: var(--secondary) 
+  color: var(--secondary);
 }
 
 .horrible-kids {
