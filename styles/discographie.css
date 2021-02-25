@@ -7,15 +7,18 @@
   --primary-alt: rgb(57, 73, 90);
   --secondary: #87d0dc;
   --secondary-alt: #a9dcdf;
-  --bg: #555a5f;
   --text: #e4efff;
-
+  --bg: #12141c;
   --title: "Fredericka the Great";
   --regular: "Neucha", cursive;
 }
 
-* {
+body{
   background-color: var(--bg);
+}
+
+a:{
+  background-color: transparent;
 }
 
 a:link {
@@ -46,7 +49,7 @@ img {
 
 .bouton1 {
   position: absolute;
-  background-color: var(--primary);
+  background-color: transparent;
   border: none;
   color: var(--text);
   font-family: var(--regular);
@@ -69,11 +72,14 @@ img {
 .titre1 {
   font-family: var(--title);
   font-size: 40px;
+  color: var(--text);
+  text-transform: uppercase;
 }
 
 .liste1 {
   font-family: var(--regular);
   font-size: 25px;
+  color: var(--secondary) 
 }
 
 .horrible-kids {
@@ -90,6 +96,8 @@ img {
   right: 0;
   top: 735px;
   z-index: 2;
+  color: var(--text);
+  text-transform: uppercase;
 }
 
 .liste2 {
@@ -99,6 +107,7 @@ img {
   right: 0;
   top: 790px;
   z-index: 2;
+  color: var(--secondary) 
 }
 
 .cinematics {
@@ -132,6 +141,8 @@ img {
   font-size: 40px;
   position: absolute;
   top: 1440px;
+  color: var(--text);
+  text-transform: uppercase;
 }
 
 .liste3 {
@@ -139,6 +150,7 @@ img {
   font-size: 25px;
   position: absolute;
   top: 1500px;
+  color: var(--secondary) 
 }
 
 .duality {
