@@ -1,1 +1,450 @@
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Neucha&display=swap);
 
+:root {
+  --primary: #4b8996;
+  --primary-alt: #3e587b;
+  --secondary: #87d0dc;
+  --secondary-alt: #a9dcdf;
+  --bg: #12141c;
+  --text: #e4efff;
+
+  --title: "Fredericka the Great";
+  --regular: "Neucha", cursive;
+}
+
+html {
+  background-color: var(--bg);
+}
+
+/********Navbar********/
+.navcolo {
+  background-color: var(--primary-alt);
+  color: var(--text);
+}
+
+.logo {
+  font-family: var(--title);
+  font-size: 30px;
+  padding-top: 2px;
+}
+
+.sizenav {
+  font-size: 26px;
+}
+
+.sablier {
+  height: 40px;
+  position: absolute;
+  top: -12px;
+  left: 174px;
+}
+
+ul {
+  font-family: var(--regular);
+  font-size: 18px;
+}
+
+@media (min-width: 576px) {
+  ul {
+    position: absolute;
+    left: 220px;
+    padding-bottom: 4px;
+  }
+}
+
+.current {
+  filter: drop-shadow(1px 1px 5px var(--secondary-alt));
+}
+/* changer la classe current selon la page */
+
+/********Héros et Main********/
+body {
+  background-color: var(--primary-alt);
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary-alt);
+  position: absolute;
+}
+
+.hero {
+  height: 97.9%;
+  width: 100%;
+  object-fit: cover;
+}
+
+picture {
+  background-color: black;
+}
+
+.col-12 {
+  position: absolute;
+  color: var(--text);
+  font-family: var(--title);
+  font-size: 6vw;
+  opacity: 100%;
+  bottom: 0;
+  left: 60px;
+  z-index: 3;
+}
+
+.container {
+  font-size: 25px;
+  font-size: 3vw;
+}
+
+.info {
+  color: var(--text);
+  font-family: var(--regular);
+  font-size: 25px;
+  font-size: 3vw;
+}
+
+.contraste {
+  position: absolute;
+  background: linear-gradient(to bottom, transparent, rgba(6, 0, 179, 0.5));
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+button {
+  position: absolute;
+  background-color: var(--primary);
+  border: none;
+  color: var(--text);
+  font-family: var(--regular);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  border-radius: 10px 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+button:hover {
+  background-color: var(--secondary);
+  color: var(--bg);
+}
+
+@media screen and (min-width: 850px) {
+  .col-12 {
+    font-size: 100px;
+  }
+  .info {
+    font-size: 25px;
+  }
+  button {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titre {
+    font-size: 65px;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .bouton {
+    font-size: 20px;
+  }
+}
+
+@media (orientation: landscape) {
+  header {
+    height: 56.7vh;
+    width: 100%;
+  }
+}
+
+/********Split********/
+a{
+  background-color: transparent;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--text);
+}
+
+a:focus {
+  color: var(--bg);
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.col-sm-12, .col-md-6 {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  margin-top: 20px;
+}
+
+.bouton1 {
+  border: none;
+  background-color: var(--primary);
+  color: var(--text);
+  font-family: var(--regular);
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 2.5vw;
+  border-radius: 10px 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 1540px;
+}
+
+.bouton1:hover,
+.bouton2:hover,
+.bouton3:hover {
+  background-color:  var(--secondary);
+  color: var(--bg);
+}
+
+.titre1 {
+  font-family: var(--title);
+  font-size: 40px;
+  color: var(--text);
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 1120px;
+}
+
+.liste1 {
+  font-family: var(--regular);
+  font-size: 25px;
+  color: var(--secondary);
+  position: absolute;
+  left: 0;
+  top: 1200px;
+}
+
+.horrible-kids {
+  position: absolute;
+  right: 0;
+  top: 180px;
+  z-index: 2;
+}
+
+.titre2 {
+  font-family: var(--title);
+  font-size: 40px;
+  position: absolute;
+  right: -220px;
+  top: 1810px;
+  z-index: 2;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+.liste2 {
+  font-family: var(--regular);
+  font-size: 25px;
+  position: absolute;
+  right: -220px;
+  top: 1880px;
+  z-index: 2;
+  color: var(--secondary) 
+}
+
+.cinematics {
+  position: absolute;
+  left: 0;
+  top: 1800px;
+  z-index: 2;
+}
+
+.bouton2 {
+  position: absolute;
+  right: 130px;
+  top: 2360px;
+  background-color: var(--primary);
+  border: none;
+  color: var(--text);
+  font-family: var(--regular);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  border-radius: 10px 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.titre3 {
+  font-family: var(--title);
+  font-size: 40px;
+  position: absolute;
+  top: 1530px;
+  left: -50px;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+.liste3 {
+  font-family: var(--regular);
+  font-size: 25px;
+  position: absolute;
+  top: 1600px;
+  left: -50px;
+  color: var(--secondary) 
+}
+
+.duality {
+  position: absolute;
+  height: 550px;
+  right: 0;
+  top: 1520px;
+  z-index: 2;
+}
+
+.bouton3 {
+  position: absolute;
+  top: 2010px;
+  left: -50px;
+  background-color: var(--primary);
+  border: none;
+  color: var(--text);
+  font-family: var(--regular);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  border-radius: 10px 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.anim {
+  position: absolute;
+  width: 230px;
+  right: 0;
+  top: 1100px;
+}
+
+/********Footer********/
+footer {
+  width: 100%;
+  margin-top: 20px; /*Pour qu'il ne touche pas au contenu en haut*/
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: var(--primary-alt);
+  color: var(--text);
+  position: absolute;
+  bottom: -2370px;
+  z-index: 3;
+}
+
+.noms,
+.copyright,
+.lien {
+  text-align: center;
+}
+
+.row {
+  font-family: var(--regular);
+}
+
+.lien {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  top: 100px;
+}
+
+.lien:hover {
+  color: var(--secondary);
+}
+
+/********Redimensionner********/
+@media screen and (max-width: 1000px) {
+  .sablier {
+    top: 8px;
+  }
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  img {
+     margin-top: 0px;
+  }
+  
+  .horrible-kids {
+    top: 640px;
+    left: -60px;
+  }
+  .titre1 {
+    top: 1050px;
+  }
+  .liste1 {
+    top: 1120px;
+  }
+  .bouton1 {
+    top: 1470px;
+  }
+
+  .cinematics {
+    top: 2930px;
+  }
+  .titre2 {
+    left: 10px;
+    top: 2250px;
+  }
+  .liste2 {
+    left: 10px;
+    top: 2320px;
+  }
+  .bouton2 {
+    left: 10px;
+    top: 2820px;
+  }
+
+  .duality {
+    top: 3230px;
+    left: -60px;
+  }
+  .titre3 {
+    left: -60px;
+    top: 2640px;
+  }
+  .liste3 {
+    left: -60px;
+    top: 2700px;
+  }
+  .bouton3 {
+    left: -60px;
+    top: 3120px;
+  }
+  
+  footer {
+    bottom: -4060px;
+  }
+}
