@@ -68,7 +68,6 @@ main {
   height: 100vh;
   width: 100%;
   background-color: var(--primary-alt);
-  position: absolute;
 }
 
 .swiper-container {
@@ -78,15 +77,13 @@ main {
   object-fit: cover;
 }
 
-.col-12 {
-  position: absolute;
+.disco {
   color: var(--text);
   font-family: var(--title);
   font-size: 6vw;
   opacity: 100%;
-  bottom: 0;
-  left: 60px;
   z-index: 3;
+  padding-top: 400px;
 }
 
 .container {
@@ -99,20 +96,21 @@ main {
   font-family: var(--regular);
   font-size: 25px;
   font-size: 3vw;
+  position: relative;
 }
 
 .contraste {
-  position: absolute;
   background: linear-gradient(to bottom, transparent, rgba(6, 0, 179, 0.5));
+  z-index: 4;
+  position: absolute;
   bottom: 0;
-  right: 0;
   left: 0;
-  top: 0;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 76px;
 }
 
 .bouton_heros {
-  position: absolute;
   background-color: var(--primary);
   border: none;
   color: var(--text);
@@ -186,11 +184,6 @@ section {
   padding-bottom: 20px;
 }
 
-.col-sm-12, .col-md-6 {
-  height: 100%;
-  width: 100%;
-}
-
 img {
   margin-top: 20px;
 }
@@ -208,9 +201,6 @@ img {
   transition-duration: 0.4s;
   cursor: pointer;
   z-index: 2;
-  position: absolute;
-  left: 0;
-  top: 1540px;
 }
 
 .bouton1:hover,
@@ -225,33 +215,21 @@ img {
   font-size: 40px;
   color: var(--text);
   text-transform: uppercase;
-  position: absolute;
-  left: 0;
-  top: 1120px;
 }
 
 .liste1 {
   font-family: var(--regular);
   font-size: 25px;
   color: var(--secondary);
-  position: absolute;
-  left: 0;
-  top: 1200px;
 }
 
 .horrible-kids {
-  position: absolute;
-  right: 0;
-  top: 180px;
   z-index: 2;
 }
 
 .titre2 {
   font-family: var(--title);
   font-size: 40px;
-  position: absolute;
-  right: -220px;
-  top: 1810px;
   z-index: 2;
   color: var(--text);
   text-transform: uppercase;
@@ -260,24 +238,15 @@ img {
 .liste2 {
   font-family: var(--regular);
   font-size: 25px;
-  position: absolute;
-  right: -220px;
-  top: 1880px;
   z-index: 2;
   color: var(--secondary) 
 }
 
 .cinematics {
-  position: absolute;
-  left: 0;
-  top: 1800px;
   z-index: 2;
 }
 
 .bouton2 {
-  position: absolute;
-  right: 130px;
-  top: 2360px;
   background-color: var(--primary);
   border: none;
   color: var(--text);
@@ -296,9 +265,6 @@ img {
 .titre3 {
   font-family: var(--title);
   font-size: 40px;
-  position: absolute;
-  top: 1530px;
-  left: -50px;
   color: var(--text);
   text-transform: uppercase;
 }
@@ -306,24 +272,15 @@ img {
 .liste3 {
   font-family: var(--regular);
   font-size: 25px;
-  position: absolute;
-  top: 1600px;
-  left: -50px;
   color: var(--secondary) 
 }
 
 .duality {
-  position: absolute;
   height: 550px;
-  right: 0;
-  top: 1520px;
   z-index: 2;
 }
 
 .bouton3 {
-  position: absolute;
-  top: 2010px;
-  left: -50px;
   background-color: var(--primary);
   border: none;
   color: var(--text);
@@ -340,17 +297,15 @@ img {
 }
 
 .anim {
-  position: absolute;
   width: 230px;
+  position: absolute;
   right: 0;
-  top: 1100px;
 }
 
 /********Vidéo********/
 .video{
   position: relative; 
   width: 100%;
-  top: 2150px;
   height: 0px; 
   padding-bottom: 56.25%;
 }
@@ -380,6 +335,12 @@ iframe{
 top: 35%;
 }
 }
+
+@media (max-width: 300px){
+iframe{
+top: 35%;
+}
+}
 /********Footer********/
 footer {
   width: 100%;
@@ -389,9 +350,9 @@ footer {
   padding-right: 50px;
   background-color: var(--primary-alt);
   color: var(--text);
-  position: absolute;
-  bottom: -3170px;
   z-index: 3;
+  bottom: -4100px;
+  position: absolute;
 }
 
 a, a:hover, a:focus, a:active {
@@ -464,6 +425,7 @@ a, a:hover, a:focus, a:active {
 
 .row {
   font-family: var(--regular);
+  color: var(--text);
 }
 
 .lien {
@@ -474,72 +436,4 @@ a, a:hover, a:focus, a:active {
 
 .lien:hover {
   color: var(--secondary);
-}
-
-/********Redimensionner********/
-@media screen and (max-width: 1000px) {
-  .sablier {
-    top: 8px;
-  }
-  section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  
-  img {
-     margin-top: 0px;
-  }
-  
-  .horrible-kids {
-    top: 640px;
-    left: -60px;
-  }
-  .titre1 {
-    top: 1050px;
-  }
-  .liste1 {
-    top: 1120px;
-  }
-  .bouton1 {
-    top: 1470px;
-  }
-
-  .cinematics {
-    top: 2930px;
-  }
-  .titre2 {
-    left: 10px;
-    top: 2250px;
-  }
-  .liste2 {
-    left: 10px;
-    top: 2320px;
-  }
-  .bouton2 {
-    left: 10px;
-    top: 2820px;
-  }
-
-  .duality {
-    top: 3230px;
-    left: -60px;
-  }
-  .titre3 {
-    left: -60px;
-    top: 2640px;
-  }
-  .liste3 {
-    left: -60px;
-    top: 2700px;
-  }
-  .bouton3 {
-    left: -60px;
-    top: 3120px;
-  }
-  .video {
-    top: 3750px;
-  }
-  footer {
-    bottom: -4630px;
-  }
 }
