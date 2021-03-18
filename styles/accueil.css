@@ -55,6 +55,16 @@ header {
     font-size: 2.5vw;
     color:  var(--text); 
 }
+	
+.bouton:hover{ 
+  background-color:  var(--secondary);
+  color: var(--bg);
+}
+
+.turquoise:hover{
+  background-color:  var(--secondary);
+  color: var(--bg);
+}
 
 @media screen and (min-width: 900px) {
     .titre{
