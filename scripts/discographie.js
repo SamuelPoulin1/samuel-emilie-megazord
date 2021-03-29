@@ -24,21 +24,26 @@ const swiper = new Swiper('.swiper-container', {
   
   gsap.timeline({
      scrollTrigger: {
-       opacity: 0, 
-       start: 'bottom bottom',
+     trigger: ".section01",
+       start: 'top top',
+     end: 'bottom bottom',
        ease: 'back', 
-       toggleActions: 'restart complete reverse reset',
+       toggleActions: 'restart none reverse none',
       }
     })
   
   .from(".section01", {
     scrollTrigger: ".section01",
+    ease: 'back',
+    opacity: 0,
     y: -200,
     duration: 1,
   })
   
   .from(".sectionTitre01", {
     scrollTrigger: ".section01",
+    ease: 'back',
+    opacity: 0,
     x: -600,
     duration: 1,
     scale: 3,
@@ -46,6 +51,8 @@ const swiper = new Swiper('.swiper-container', {
   
   .from(".sectionTitre02", {
     scrollTrigger: ".section01",
+    ease: 'back',
+    opacity: 0,
     x: -600,
     duration: 1,
     scale: 3,
@@ -53,6 +60,8 @@ const swiper = new Swiper('.swiper-container', {
   
   .from(".sectionTitre03", {
     scrollTrigger: ".section01",
+    ease: 'back',
+    opacity: 0,
     x: -600,
     duration: 1,
     scale: 3,
@@ -60,12 +69,16 @@ const swiper = new Swiper('.swiper-container', {
   
   gsap.from(".section02", {
     scrollTrigger: ".section02",
+    ease: 'back',
+    opacity: 0,
     y: -100,
     duration: 2,
   })
   
   gsap.from(".sectionTitre04", {
     scrollTrigger: ".section02",
+    ease: 'back',
+    opacity: 0,
     scale: 1.5,
     duration: 1.5,
   })
