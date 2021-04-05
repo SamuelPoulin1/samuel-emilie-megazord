@@ -12,5 +12,5 @@ Animations Sprite sheet
 
 Émilie Fontaine 
 https://codepen.io/amnethyste/pen/yLgbBrw (idle) 
-https://codepen.io/amnethyste/pen/eYgWvYB (scroll up)
+https://codepen.io/amnethyste/pen/eYgWvYB (scroll up) 
 https://codepen.io/amnethyste/pen/OJWmpJG (scroll down)
