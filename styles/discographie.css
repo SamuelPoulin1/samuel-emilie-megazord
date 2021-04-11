@@ -296,12 +296,6 @@ img {
   z-index: 2;
 }
 
-.anim {
-  width: 230px;
-  position: absolute;
-  right: 0;
-}
-
 /********Vidéo********/
 .video{
   position: relative; 
@@ -351,7 +345,7 @@ footer {
   background-color: var(--primary-alt);
   color: var(--text);
   z-index: 3;
-  bottom: -4100px;
+  bottom: -4400px;
   position: absolute;
 }
 
@@ -436,4 +430,53 @@ h2 {
 
 .lien:hover {
   color: var(--secondary);
+}
+
+/********Animation Scroll********/
+
+.animationLogo { 
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 50%;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 100%;
+  background-image: url(https://zupimages.net/up/21/14/03hh.png);
+  background-size: cover;
+  animation-name: idle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(23);
+}
+
+@keyframes idle {
+  from { background-position: 0 0; }
+  to { background-position: 0 -100%; }
+}
+
+
+.direction-up.is-scrolling .animationLogo {
+  background-image: url(https://zupimages.net/up/21/14/syf7.png);
+  animation-name: scrollUp;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(23);
+}
+
+@keyframes scrollUp {
+  from { background-position: 0 0; }
+  to { background-position: 0 -100%; } 
+}
+
+.direction-down.is-scrolling .animationLogo {
+  background-image: url(https://zupimages.net/up/21/14/h615.png);
+  animation-name: scrollDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(23); 
+}
+
+@keyframes scrollDown {
+  from { background-position: 0 0; }
+  to { background-position: 0 -100%; } 
 }
