@@ -139,6 +139,7 @@ gsap.to('.animationLogo', {
 
 //--------quiz----------
 
+
 let questions = [ 
 {
 q: "Quel style le groupe Set it off n'est-il pas connu pour?",
@@ -402,8 +403,8 @@ R.forEach((radio) => {
 			{ x: '-100vh',
 			  opacity: '0%',
 			}, 
-			{ x: '153px',
-			 y: '-150px',
+			{ x: '183px',
+			 y: '-30px',
 			  opacity: '100%',
 			  ease: "bounce",
 			duration:0.3,}
@@ -413,8 +414,8 @@ R.forEach((radio) => {
 			{ x: '-100vh',
 			  opacity: '0%',
 			 width:'0px'}, 
-			{ y: '-175px', 
-			 x: '155px',
+			{ y: '-30px', 
+			 x: '183px',
 			 opacity: '100%',
 			  width:'100px',
 			 ease: "bounce",
@@ -489,3 +490,4 @@ divFinal.innerText = 'Quiz terminé' ;
 }
 
 new Quiz(questions);
+
