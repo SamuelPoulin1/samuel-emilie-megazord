@@ -113,7 +113,7 @@ const swiper = new Swiper('.swiper-container', {
   
   /*Quiz*/
   
-  fetch('http://samuelpoulin.ca.n0c.world/json')
+  fetch('https://samuelpoulin.ca.n0c.world/json')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.log('Une erreur est survenue'));
