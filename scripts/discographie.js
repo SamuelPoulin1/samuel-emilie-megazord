@@ -113,10 +113,77 @@ const swiper = new Swiper('.swiper-container', {
   
   /*Quiz*/
   
-  fetch('https://samuelpoulin.ca.n0c.world/json')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.log('Une erreur est survenue'));
+  let questions = [ 
+  {
+  q: "Quel style le groupe Set it off n'est-il pas connu pour?",
+  o1: "Pop Punk",
+  o2: "Post Hardoce",
+  o3: "Jazz Rock" ,
+  o4: "Acoustique",
+  
+  r: 3},
+  {
+  q: "Combien de batteurs y a-t-il eu dans le groupe depuis sa création?",
+  o1: "1",
+  o2: "2",
+  o3: "3" ,
+  o4: "4",
+  
+  r: 4
+  },
+  {
+  q: "Vrai ou faux? Zach DeWall était déjà connu pour ses covers de musiques sur youtube.",
+  o1: "Vrai",
+  o2: "Faux",
+  
+  r: 2
+  },
+  {
+  q: "Quel album possède une seconde version complètement accoustique?",
+  o1: "Cinematics",
+  o2: "Duality",
+  o3: "Upside Down" ,
+  o4: "Midnight",
+  
+  r: 2
+  },
+  {
+  q: "Quel est le pays d'origine du groupe?",
+  o1: "Canada",
+  o2: "Royaume-Uni",
+  o3: "États-Unis" ,
+  o4: "Australie",
+  
+  r: 3
+  },
+  {
+  q: "Combien de membres possède le groupe présentement?",
+  o1: "3",
+  o2: "4",
+  o3: "5" ,
+  o4: "6",
+  
+  r: 1
+  },
+  {
+  q: "Quel est le nom de leur deuxième album?",
+  o1: "Midnight",
+  o2: "Duality",
+  o3: "Horrible Kids" ,
+  o4: "Cinematics",
+  
+  r: 4
+  },
+  {
+  q: "Quel instrument joue Maxx Danziger?",
+  o1: "Batterie",
+  o2: "Guitare",
+  o3: "Piano" ,
+  
+  r: 1
+  }
+  ]; 
+  
   
   class Quiz {
   constructor(tableau) {

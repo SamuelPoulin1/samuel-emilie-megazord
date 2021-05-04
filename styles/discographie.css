@@ -195,7 +195,7 @@ opacity: 0;
 background-color: white;
 height: 30px;
 width: 120px;
-position: relative;
+position: absolute;
 top: 150px;
 left: 15px;
 transform: translateX(-100vh) rotate(-130deg);
@@ -207,8 +207,8 @@ box-shadow: 10px -10px 28px var(--bg);
 height: 200px;
 width: 1080px;
 overflow: hidden;
-position: relative; 
-transform: translate(150px,-75px);
+position: absolute; 
+transform: translate(150px,-85px);
 }
 
 .question {
@@ -224,20 +224,22 @@ transform: translate(150px,-75px);
 background-color: white;
 height: 30px;
 width: 100px;
-position: relative; 
+position: absolute; 
 transform: translateX(170px) rotate(-130deg);
 z-index: 4;
 box-shadow: 5px 10px 28px var(--bg);
+top: 140px;
 }
 
 .anim05{
 background-color: white;
 height: 30px;
 width: 100px;
-position: relative;
+position: absolute;
 transform: translateX(370px) translateY(500vh) rotate(130deg);
 z-index: 3;
 box-shadow: 10px -10px 28px var(--bg);
+top: 140px;
 }
 
 .anim06{
@@ -245,8 +247,8 @@ background-color: var(--primary-alt);;
 height: 0px;
 width: 0px;
 border-radius: 100%;
-transform: translate(150px,-105px);
- overflow: hidden;
+top: 140px;
+overflow: hidden;
 }
 
 .anim_img02{
