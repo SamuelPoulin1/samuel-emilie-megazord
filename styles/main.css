@@ -1,4 +1,33 @@
+:root {
+    --primary:#4b8996; 
+    --primary-alt:#3E587B;
+    --secondary:#87d0dc;
+    --secondary-alt:#a9dcdf;
+    --bg: #12141c;
+    --text: #E4EFFF;
+      
+    --title: 'Fredericka the Great'; 
+    --regular: 'Neucha', cursive;
+}
+
+h3{
+font-family: var(--title);
+color: var(--text);
+font-size:35px; 
+}
+
+h4{
+font-family: var(--regular);
+color: var(--secondary-alt);
+font-size:20px; 
+}
+
+a{
+font-family: var(--regular);
+color: var(--text);	
+text-decoration: none; 
+}
 
 
-@import url('styles/accueil.css')
-@import url('styles/discographie.css') 
+@import url('styles/accueil.css');
+@import url('styles/discographie.css');
