@@ -38,7 +38,6 @@ html {
   height: 40px;
   position: absolute;
   top: -12px;
-  left: 174px;
 }
 
 ul {
@@ -599,10 +598,6 @@ h2 {
   margin: 0 auto;
   width: 300px;
   display: block;
-}
-
-.modal-backdrop {
-   background-color: red;
 }
 
 .samuel_btn {
