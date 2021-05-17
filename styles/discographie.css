@@ -242,17 +242,19 @@ top: 140px;
 }
 
 .anim06{
-background-color: var(--primary-alt);;
+background-color: var(--primary-alt);
 height: 0px;
 width: 0px;
 border-radius: 100%;
+position:absolute; 
 top: 140px;
 overflow: hidden;
 }
 
 .anim_img02{
   position: absolute;
-  height: 200px;
+  height: 160px;
+  width: 160px;
   object-fit: cover;
   opacity: 90%;
 }
@@ -400,7 +402,14 @@ section {
   padding-bottom: 20px;
 }
 
-img {
+.sablier,
+.image_swiper,
+.horrible-kids,
+.cinematics,
+.duality,
+.emilie_icone,
+.samuel_icone
+ {
   margin-top: 20px;
 }
 
